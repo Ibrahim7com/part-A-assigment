@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ALT School Application Form</title>
+</head>
+<body>
+	<header>
+		<nav aria-label="Main navigation">
+			<ul>
+				<li><a href="index.html">First Assignment</a></li>
+				<li><a href="form.html" aria-current="page">ALT School Application Form</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1>Create Your ALT School Account</h1>
+		<p>Enter your details to begin your application.</p>
+
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Personal information</legend>
+
+				<p>
+					<label for="first-name">First name</label><br>
+					<input type="text" id="first-name" name="first_name" autocomplete="given-name" required>
+				</p>
+				<p>
+					<label for="last-name">Last name</label><br>
+					<input type="text" id="last-name" name="last_name" autocomplete="family-name" required>
+				</p>
+				<p>
+					<label for="email">Email address</label><br>
+					<input type="email" id="email" name="email" autocomplete="email" required>
+				</p>
+				<p>
+					<label for="phone">Phone number</label><br>
+					<input type="tel" id="phone" name="phone" autocomplete="tel" required>
+				</p>
+				<p>
+					<label for="country">Country</label><br>
+					<input type="text" id="country" name="country" autocomplete="country-name" required>
+				</p>
+				<p>
+					<label for="state">State or region</label><br>
+					<input type="text" id="state" name="state" autocomplete="address-level1" required>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Account security</legend>
+				<p>
+					<label for="password">Password</label><br>
+					<input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+				</p>
+				<p>
+					<label for="confirm-password">Confirm password</label><br>
+					<input type="password" id="confirm-password" name="confirm_password" autocomplete="new-password" minlength="8" required>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Application details</legend>
+				<p>
+					<label for="referral">How did you hear about ALT School?</label><br>
+					<select id="referral" name="referral_source">
+						<option value="">Select an option</option>
+						<option value="social-media">Social media</option>
+						<option value="friend-or-family">Friend or family</option>
+						<option value="online-search">Online search</option>
+						<option value="event">Event</option>
+						<option value="other">Other</option>
+					</select>
+				</p>
+			</fieldset>
+
+			<p>
+				<input type="checkbox" id="terms" name="terms" required>
+				<label for="terms">I agree to the terms and conditions.</label>
+			</p>
+			<button type="submit">Create account</button>
+		</form>
+	</main>
+
+	<footer>
+		<p><small>Copyright &copy; 2026. All rights reserved.</small></p>
+	</footer>
+</body>
+</html>
+
